@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+Token.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h
+vector
+-
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+Token.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
+string
+-
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/main.cpp
+Lexer.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h
+iostream
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/iostream
+

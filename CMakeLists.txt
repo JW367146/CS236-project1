@@ -15,4 +15,4 @@ add_executable(CS236_Project1
         Lexer.h
         main.cpp
         Token.cpp
-        Token.h)
+        Token.h QueriesFSA.h)

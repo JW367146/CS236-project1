@@ -14,6 +14,14 @@ private:
 
     // TODO: add any other private methods here (if needed)
 
+
+    //Let's make all the numbers we need for a lexer here as well!
+    int lineNumber;
+    int maxRead;
+    Automaton* maxAutomaton;
+
+    Token* newToken;
+
 public:
     Lexer();
     ~Lexer();

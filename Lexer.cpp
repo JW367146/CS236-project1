@@ -1,6 +1,13 @@
 #include "Lexer.h"
+#include "iostream"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
+#include "QueriesFSA.h"
+
+#include <cctype>
+
+
+using namespace std;
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -13,10 +20,58 @@ Lexer::~Lexer() {
 void Lexer::CreateAutomata() {
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
+    automata.push_back(new QueriesFSA());
     // TODO: Add the other needed automata here
 }
 
 void Lexer::Run(std::string& input) {
+
+
+
+    int inputSize = input.size();
+
+
+    //We set this to 1
+    lineNumber = 1;
+
+    while (input.size() > 0)
+    {
+        maxRead = 0;
+        maxAutomaton = automata[1];
+        /*   Each automaton runs with the same input
+        foreach automaton in automata {
+                inputRead = automaton.Start(input)
+                if (inputRead > maxRead) {
+                    set maxRead to inputRead
+                    set maxAutomaton to automaton
+                }
+        }*/
+
+        /// Run all the FSA on the input
+        for(int i = 0; i < automata.size(); i++){
+
+                unsigned int inputRead = automata[i]->Start(input);
+                if (inputRead > maxRead){
+                    maxRead = inputRead;
+                    maxAutomaton = automata[i];
+                }
+        }
+
+        // No we put the best match in our tokens
+        if (maxRead > 0){
+            string tokenInput;
+            for (int i =0; i < maxRead;i++){
+                tokenInput += input[i];
+            }
+            newToken = maxAutomaton->CreateToken(tokenInput, lineNumber);
+            for (int i = 0; i<maxAutomaton->NewLinesRead(); i++){
+                lineNumber++;
+            }
+            tokens.push_back(newToken);
+
+        }
+
+    }
     // TODO: convert this pseudo-code with the algorithm into actual C++ code
     /*
     set lineNumber to 1
@@ -27,16 +82,10 @@ void Lexer::Run(std::string& input) {
 
         // TODO: you need to handle whitespace inbetween tokens
 
-        // Here is the "Parallel" part of the algorithm
-        //   Each automaton runs with the same input
-        foreach automaton in automata {
-            inputRead = automaton.Start(input)
-            if (inputRead > maxRead) {
-                set maxRead to inputRead
-                set maxAutomaton to automaton
-            }
-        }
-        // Here is the "Max" part of the algorithm
+        // Here is the "Parallel" part of the algorithm */
+
+
+        /* Here is the "Max" part of the algorithm
         if maxRead > 0 {
             set newToken to maxAutomaton.CreateToken(...)
                 increment lineNumber by maxAutomaton.NewLinesRead()

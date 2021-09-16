@@ -20,6 +20,7 @@ public:
     // Start the automaton and return the number of characters read
     //   read == 0 indicates the input was rejected
     //   read  > 0 indicates the input was accepted
+
     int Start(const std::string& input) {
         newLines = 0;
         inputRead = 0;

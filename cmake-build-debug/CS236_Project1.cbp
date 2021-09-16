@@ -105,6 +105,9 @@
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h">
 			<Option target="CS236_Project1"/>
 		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/QueriesFSA.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.cpp">
 			<Option target="CS236_Project1"/>
 		</Unit>

@@ -2,12 +2,26 @@
 #include "iostream"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
-#include "QueriesFSA.h"
+#include "FSA_L_Paren.h"
+#include "FSA_R_Paren.h"
+#include "FSA_Comma.h"
+#include "FSA_Multiply.h"
+
+#include "FSA_Rules.h"
+#include "FSA_Facts.h"
+#include "FSA_Schemes.h"
+#include "FSA_Queries.h"
+
+#include "FSA_String.h"
+#include "FSA_ID.h"
+#include "FSA_Comment.h"
+
+#include "Undefined.h"
 
 #include <cctype>
 
-
 using namespace std;
+
 
 Lexer::Lexer() {
     CreateAutomata();
@@ -18,90 +32,107 @@ Lexer::~Lexer() {
 }
 
 void Lexer::CreateAutomata() {
+    //These are my simple one-ish character FSAs
     automata.push_back(new ColonAutomaton());
     automata.push_back(new ColonDashAutomaton());
-    automata.push_back(new QueriesFSA());
-    // TODO: Add the other needed automata here
+    automata.push_back(new FSA_L_Paren());
+    automata.push_back(new FSA_R_Paren());
+    automata.push_back(new FSA_Comma);
+    automata.push_back(new FSA_Multiply);
+    //These are my KeyWord FSAs
+    automata.push_back(new FSA_Queries());
+    automata.push_back(new FSA_Rules());
+    automata.push_back(new FSA_Facts());
+    automata.push_back(new FSA_Schemes());
+
+    //These are my FSA that require more thinking
+    automata.push_back(new FSA_ID());
+    automata.push_back(new FSA_String());
+    automata.push_back(new FSA_Comment());
+
 }
 
 void Lexer::Run(std::string& input) {
 
 
 
-    int inputSize = input.size();
 
 
     //We set this to 1
     lineNumber = 1;
 
+
+    //// This is where we read everthing
     while (input.size() > 0)
     {
+
         maxRead = 0;
         maxAutomaton = automata[1];
-        /*   Each automaton runs with the same input
-        foreach automaton in automata {
-                inputRead = automaton.Start(input)
-                if (inputRead > maxRead) {
-                    set maxRead to inputRead
-                    set maxAutomaton to automaton
-                }
-        }*/
 
-        /// Run all the FSA on the input
-        for(int i = 0; i < automata.size(); i++){
+
+        //Before we  start reading input let's skip over white space
+        char firstChar = input[0];
+
+        //If it's not white space then read everything in and continue
+        if(!isspace(firstChar)){
+
+            /// Run all the FSA on the input
+            for(int i = 0; i < automata.size(); i++){
 
                 unsigned int inputRead = automata[i]->Start(input);
                 if (inputRead > maxRead){
                     maxRead = inputRead;
                     maxAutomaton = automata[i];
                 }
-        }
-
-        // No we put the best match in our tokens
-        if (maxRead > 0){
-            string tokenInput;
-            for (int i =0; i < maxRead;i++){
-                tokenInput += input[i];
             }
-            newToken = maxAutomaton->CreateToken(tokenInput, lineNumber);
-            for (int i = 0; i<maxAutomaton->NewLinesRead(); i++){
-                lineNumber++;
+
+            // No2 we put the best match in our tokens
+            if (maxRead > 0){
+                string tokenInput;
+                for (int i =0; i < maxRead;i++){
+                    tokenInput += input[i];
+                }
+                newToken = maxAutomaton->CreateToken(tokenInput, lineNumber);
+                for (int i = 0; i<maxAutomaton->NewLinesRead(); i++){
+                    lineNumber++;
+                }
+                tokens.push_back(newToken);
+
             }
-            tokens.push_back(newToken);
+            else {
+                //If we didn't succeed in any FSA then we have undefined character
+                maxRead = 1;
+                //Let's make an undefined auto
+                Automaton* undefined = new Undefined();
+                //We want to pass in the first char in the input string
+                string tokenInput;
+                tokenInput += input[0];
+                newToken = undefined->CreateToken( tokenInput, lineNumber );
+                tokens.push_back(newToken);
+            }
 
         }
-
-    }
-    // TODO: convert this pseudo-code with the algorithm into actual C++ code
-    /*
-    set lineNumber to 1
-    // While there are more characters to tokenize
-    loop while input.size() > 0 {
-        set maxRead to 0
-        set maxAutomaton to the first automaton in automata
-
-        // TODO: you need to handle whitespace inbetween tokens
-
-        // Here is the "Parallel" part of the algorithm */
-
-
-        /* Here is the "Max" part of the algorithm
-        if maxRead > 0 {
-            set newToken to maxAutomaton.CreateToken(...)
-                increment lineNumber by maxAutomaton.NewLinesRead()
-                add newToken to collection of all tokens
+        else if(firstChar == '\n'){
+            //I'm going to control for newlines here
+            lineNumber++;
+            maxRead = 1;
         }
-        // No automaton accepted input
-        // Create single character undefined token
         else {
-            set maxRead to 1
-                set newToken to a  new undefined Token
-                (with first character of input)
-                add newToken to collection of all tokens
+            // If it is space, we still need to increase the read that we use below to get newInput
+            maxRead = 1;
         }
-        // Update `input` by removing characters read to create Token
-        remove maxRead characters from input
+
+
+
+
+        //Now we have made our tokens we need to cut off that bit from the input
+        string nextInput;
+        //We are going to make a string of size input - maxRead
+        int inputSize = input.size();
+        for(int i = 0; i < inputSize-maxRead; i++){
+            nextInput +=input[i+maxRead];
+        }
+        //And then we replace input with the nextInput
+        input = nextInput;
     }
-    add end of file token to all tokens
-    */
 }

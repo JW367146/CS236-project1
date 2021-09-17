@@ -18,6 +18,58 @@ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
 Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comma.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comment.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Facts.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+string
+-
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_ID.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_L_Paren.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Multiply.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Queries.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+string
+-
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_R_Paren.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Rules.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+string
+-
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Schemes.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+string
+-
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_String.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.cpp
 Lexer.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h
@@ -27,8 +79,30 @@ ColonAutomaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.h
 ColonDashAutomaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
-QueriesFSA.h
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/QueriesFSA.h
+FSA_L_Paren.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_L_Paren.h
+FSA_R_Paren.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_R_Paren.h
+FSA_Comma.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comma.h
+FSA_Multiply.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Multiply.h
+FSA_Rules.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Rules.h
+FSA_Facts.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Facts.h
+FSA_Schemes.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Schemes.h
+FSA_Queries.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Queries.h
+FSA_String.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_String.h
+FSA_ID.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_ID.h
+FSA_Comment.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comment.h
+Undefined.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Undefined.h
 cctype
 -
 
@@ -40,13 +114,13 @@ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 Token.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
 
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/QueriesFSA.h
-Automaton.h
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
 string
 -
 
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Undefined.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 string
 -
 

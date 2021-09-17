@@ -10,6 +10,15 @@ protected:
     int index = 0;
     TokenType type;
 
+//    //I want to know if I'm at the end of the file
+//    bool EOF (const std::string inputy, const int inputReady){
+//        inputSize = input.size();
+//        if (inputReady == inputSize){
+//            return true;
+//        }
+//        else return false;
+//    }
+
 public:
     // Default constructor -- since we have a constructor that takes a parameter,
     //   the compiler will autogenerate a default constructor if not explicit.
@@ -27,6 +36,15 @@ public:
         index = 0;
         S0(input);
         return inputRead;
+    }
+
+    ////I want this to tell me if the file is at the end
+    bool EndofFile (std::string inputy, int inputReady){
+        int inputSizey = inputy.size();
+        if (inputReady == inputSizey){
+            return true;
+        }
+        else return false;
     }
 
     // Every subclass must define this method

@@ -99,19 +99,52 @@
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h">
 			<Option target="CS236_Project1"/>
 		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comma.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comment.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Facts.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_ID.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_L_Paren.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Multiply.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Queries.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_R_Paren.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Rules.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Schemes.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_String.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.cpp">
 			<Option target="CS236_Project1"/>
 		</Unit>
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h">
 			<Option target="CS236_Project1"/>
 		</Unit>
-		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/QueriesFSA.h">
-			<Option target="CS236_Project1"/>
-		</Unit>
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.cpp">
 			<Option target="CS236_Project1"/>
 		</Unit>
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h">
+			<Option target="CS236_Project1"/>
+		</Unit>
+		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Undefined.h">
 			<Option target="CS236_Project1"/>
 		</Unit>
 		<Unit filename="C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/main.cpp">

@@ -1,6 +1,13 @@
-Queries:
-   marriedTo ('Bea' , 'Zed')?
+'jo
+s'
 
-Rules:
-   marriedTo( X,Y ) :- marriedTo(Y,X) .
+'
+
+
+j'
+
+
+'
+
+j
 

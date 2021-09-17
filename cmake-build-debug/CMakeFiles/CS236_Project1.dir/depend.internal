@@ -15,10 +15,21 @@ CMakeFiles/CS236_Project1.dir/Lexer.cpp.obj
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comma.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comment.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Facts.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_ID.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_L_Paren.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Multiply.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Queries.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_R_Paren.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Rules.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Schemes.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_String.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.cpp
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h
- C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/QueriesFSA.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Undefined.h
 CMakeFiles/CS236_Project1.dir/Token.cpp.obj
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.cpp
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h

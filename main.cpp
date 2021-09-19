@@ -53,7 +53,7 @@ int main(int argc, char** argv) {
     Lexer* lexer = new Lexer();
     lexer->Run(lines);
 
-
+cout << lexer->toString();
 
     delete lexer;
     return 0;

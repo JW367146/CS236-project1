@@ -14,12 +14,15 @@ CMakeFiles\CS236_Project1.dir\ColonDashAutomaton.cpp.obj: ..\Token.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\Automaton.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\ColonAutomaton.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\ColonDashAutomaton.h
+CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Add.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Comma.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Comment.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Facts.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_ID.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_L_Paren.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Multiply.h
+CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Period.h
+CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Q_Mark.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Queries.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_R_Paren.h
 CMakeFiles\CS236_Project1.dir\Lexer.cpp.obj: ..\FSA_Rules.h

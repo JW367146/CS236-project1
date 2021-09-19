@@ -10,11 +10,23 @@ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 Token.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
 
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.cpp
+ColonAutomaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.h
+
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.h
 Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.cpp
+ColonDashAutomaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Add.h
 Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 
@@ -41,6 +53,14 @@ Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Multiply.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Period.h
+Automaton.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Q_Mark.h
 Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 
@@ -85,6 +105,12 @@ FSA_R_Paren.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_R_Paren.h
 FSA_Comma.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comma.h
+FSA_Period.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Period.h
+FSA_Q_Mark.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Q_Mark.h
+FSA_Add.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Add.h
 FSA_Multiply.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Multiply.h
 FSA_Rules.h
@@ -114,8 +140,14 @@ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 Token.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
 
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.cpp
+Token.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
+
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
 string
+-
+sstream
 -
 
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Undefined.h
@@ -123,4 +155,12 @@ Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 string
 -
+
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/main.cpp
+Lexer.h
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h
+iostream
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/iostream
+fstream
+C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/fstream
 

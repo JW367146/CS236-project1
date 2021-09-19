@@ -1,8 +1,9 @@
 #ifndef CS236_PROJECT1_FSA_COMMA_H
 #define CS236_PROJECT1_FSA_COMMA_H
 
-#include "Automaton.h"
 
+
+#include "Automaton.h"
 
 class FSA_Comma : public Automaton
 {

@@ -15,12 +15,15 @@ CMakeFiles/CS236_Project1.dir/Lexer.cpp.obj
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Add.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comma.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Comment.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Facts.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_ID.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_L_Paren.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Multiply.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Period.h
+ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Q_Mark.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Queries.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_R_Paren.h
  C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/FSA_Rules.h

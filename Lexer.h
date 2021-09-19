@@ -27,8 +27,26 @@ public:
     ~Lexer();
 
     void Run(std::string& input);
-    
-    // TODO: add other public methods here
+
+
+
+    std::string toString() const
+    {
+        int tokenSize = tokens.size();
+        std::stringstream out;
+
+        for(int i = 0; i < tokens.size(); i++){
+            out << tokens[i]->toString();
+        }
+        out << "Total Tokens = "<< tokenSize;
+        return out.str();
+    }
+
+    friend std::ostream& operator<< (std::ostream& os,  Lexer& myclass)
+    {
+        os << myclass.toString();
+        return os;
+    }
 
 };
 

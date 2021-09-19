@@ -5,6 +5,9 @@
 #include "FSA_L_Paren.h"
 #include "FSA_R_Paren.h"
 #include "FSA_Comma.h"
+#include "FSA_Period.h"
+#include "FSA_Q_Mark.h"
+#include "FSA_Add.h"
 #include "FSA_Multiply.h"
 
 #include "FSA_Rules.h"
@@ -37,8 +40,11 @@ void Lexer::CreateAutomata() {
     automata.push_back(new ColonDashAutomaton());
     automata.push_back(new FSA_L_Paren());
     automata.push_back(new FSA_R_Paren());
-    automata.push_back(new FSA_Comma);
-    automata.push_back(new FSA_Multiply);
+    automata.push_back(new FSA_Comma());
+    automata.push_back(new FSA_Multiply());
+    automata.push_back(new FSA_Add());
+    automata.push_back(new FSA_Period());
+    automata.push_back(new FSA_Q_Mark());
     //These are my KeyWord FSAs
     automata.push_back(new FSA_Queries());
     automata.push_back(new FSA_Rules());
@@ -55,9 +61,6 @@ void Lexer::CreateAutomata() {
 void Lexer::Run(std::string& input) {
 
 
-
-
-
     //We set this to 1
     lineNumber = 1;
 
@@ -72,6 +75,15 @@ void Lexer::Run(std::string& input) {
 
         //Before we  start reading input let's skip over white space
         char firstChar = input[0];
+
+        //And if we are at the end of file the input will just be \n and we'll make an end of file token
+        //The input size will be just 1
+        int inputSizy = input.size();
+        if(firstChar == '\n' && inputSizy == 1){
+            //This means I'm at the end of file
+
+            tokens.push_back(new Token(TokenType::eof, "", lineNumber));
+        }
 
         //If it's not white space then read everything in and continue
         if(!isspace(firstChar)){
@@ -97,6 +109,7 @@ void Lexer::Run(std::string& input) {
                     lineNumber++;
                 }
                 tokens.push_back(newToken);
+
 
             }
             else {
@@ -135,4 +148,5 @@ void Lexer::Run(std::string& input) {
         //And then we replace input with the nextInput
         input = nextInput;
     }
+
 }

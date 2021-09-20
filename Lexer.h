@@ -17,7 +17,7 @@ private:
 
     //Let's make all the numbers we need for a lexer here as well!
     int lineNumber;
-    int maxRead;
+    long unsigned int maxRead;
     Automaton* maxAutomaton;
 
     Token* newToken;

@@ -9,8 +9,8 @@ class FSA_Comment : public Automaton
 {
 private:
     void S1 (const std::string& input){
-        bool b = EndofFile(input, inputRead);
-        char a = input[index];
+//        bool b = EndofFile(input, inputRead);
+//        char a = input[index];
         if(input[index] == '|'){
             inputRead++;
             index++;
@@ -29,8 +29,8 @@ private:
 
     //This is the line comment branch
     void S2b (const std::string& input){
-        bool b = EndofFile(input, inputRead);
-        char a = input[index];
+//        bool b = EndofFile(input, inputRead);
+//        char a = input[index];
 
         if (input[index]){
             if(input[index] != '\n'){
@@ -47,8 +47,8 @@ private:
     }
 
     void S2 (const std::string& input){
-        char a = input[index];
-        bool b = EndofFile(input, inputRead);
+//        char a = input[index];
+//        bool b = EndofFile(input, inputRead);
 
         if(input[index]== '|'){
             inputRead++;
@@ -71,8 +71,8 @@ private:
     }
 
     void S3 (const std::string& input) {
-        char a = input[index];
-        bool b = EndofFile(input, inputRead);
+//        char a = input[index];
+//        bool b = EndofFile(input, inputRead);
 
         if(input[index] == '#'){
             inputRead++;
@@ -99,8 +99,8 @@ private:
     }
 
     void SF(const std::string& input){
-        char a = input[index];
-        bool b = EndofFile(input, inputRead);
+//        char a = input[index];
+//        bool b = EndofFile(input, inputRead);
 
         //This is the accept state and is really just here for my visual pleasure.
     }
@@ -109,7 +109,7 @@ public:
 
 
     void S0  (const std::string& input){
-        char a = input[index];
+        //char a = input[index];
         if(input[index] == '#'){
             index++;
             inputRead++;

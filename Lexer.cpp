@@ -88,9 +88,9 @@ void Lexer::Run(std::string& input) {
         if(!isspace(firstChar)){
 
             /// Run all the FSA on the input
-            for(int i = 0; i < automata.size(); i++){
+            for(long unsigned int i = 0; i < automata.size(); i++){
 
-                unsigned int inputRead = automata[i]->Start(input);
+                long unsigned int inputRead = automata[i]->Start(input);
                 if (inputRead > maxRead){
                     maxRead = inputRead;
                     maxAutomaton = automata[i];

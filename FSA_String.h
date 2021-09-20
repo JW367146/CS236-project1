@@ -11,7 +11,7 @@ class FSA_String : public Automaton
 private:
 
     void S1 (const std::string& input){
-        char a = input[index];
+//        char a = input[index];
         if(input[index] == '\''){
             inputRead++;
             //go to accept state
@@ -36,7 +36,7 @@ private:
 
     }
     void S2 (const std::string& input){
-        char a = input[index];
+//        char a = input[index];
         if(EndofFile(input,inputRead)){
             Serr();
         }
@@ -63,19 +63,19 @@ private:
     }
 
     void S3 (const std::string& input){
-        char a = input[index];
+//        char a = input[index];
         if(input[index] == '\''){
             // This means there is a ''inside the string which shouldn't terminate the string
             inputRead++;
             index++;
             S2(input);
         }
-        else if(input[index] == '\n'){
-            //If we got here and there's a new line then our string is done
-
-            //We go to an accept state
-            //We shouldn't increment input read
-        }
+//        else if(input[index] == '\n'){
+//            //If we got here and there's a new line then our string is done
+//
+//            //We go to an accept state
+//            //We shouldn't increment input read
+//        }
         else{
             //If we got to this stage, then we got ' and then another' and unless there is a ' coming right after our string is done.
             //inputRead++;
@@ -89,7 +89,7 @@ public:
     FSA_String() : Automaton(TokenType::STRING) {}  // Call the base constructor
 
     void S0(const std::string& input) {
-        char a = input[index];
+//        char a = input[index];
         if (input[index] == '\'') {
             index++;
             inputRead++;

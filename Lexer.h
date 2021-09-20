@@ -32,10 +32,10 @@ public:
 
     std::string toString() const
     {
-        int tokenSize = tokens.size();
+        long unsigned int tokenSize = tokens.size();
         std::stringstream out;
 
-        for(int i = 0; i < tokens.size(); i++){
+        for(long unsigned int i = 0; i < tokens.size(); i++){
             out << tokens[i]->toString();
         }
         out << "Total Tokens = "<< tokenSize;

@@ -9,7 +9,7 @@ class FSA_ID : public Automaton
 {
 private:
     void S1 (const std::string& input){
-        char a = input[index];
+//        char a = input[index];
         if(isalnum(input[index])){
             //For each successive alphanumeric we add it and go to the next
             inputRead++;
@@ -29,7 +29,7 @@ public:
 
 
     void S0  (const std::string& input){
-        char a = input[index];
+//        char a = input[index];
         if(isalpha(input[index])){
             index++;
             inputRead++;

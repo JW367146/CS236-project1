@@ -1,5 +1,4 @@
 #include "Lexer.h"
-#include "iostream"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
 #include "FSA_L_Paren.h"

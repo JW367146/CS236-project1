@@ -100,11 +100,11 @@ void Lexer::Run(std::string& input) {
             // No2 we put the best match in our tokens
             if (maxRead > 0){
                 string tokenInput;
-                for (int i =0; i < maxRead;i++){
+                for (long unsigned int i =0; i < maxRead;i++){
                     tokenInput += input[i];
                 }
                 newToken = maxAutomaton->CreateToken(tokenInput, lineNumber);
-                for (int i = 0; i<maxAutomaton->NewLinesRead(); i++){
+                for (long unsigned int i = 0; i<maxAutomaton->NewLinesRead(); i++){
                     lineNumber++;
                 }
                 tokens.push_back(newToken);

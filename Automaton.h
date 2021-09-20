@@ -57,7 +57,7 @@ public:
 
     virtual Token* CreateToken(std::string input, int lineNumber) { return new Token(type, input, lineNumber); }
 
-    int NewLinesRead() const { return newLines; }
+    long unsigned int NewLinesRead() const { return newLines; }
 };
 
 #endif // AUTOMATON_H

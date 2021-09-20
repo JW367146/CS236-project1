@@ -141,7 +141,7 @@ void Lexer::Run(std::string& input) {
         string nextInput;
         //We are going to make a string of size input - maxRead
         int inputSize = input.size();
-        for(int i = 0; i < inputSize-maxRead; i++){
+        for(unsigned int i = 0; i < inputSize-maxRead; i++){
             nextInput +=input[i+maxRead];
         }
         //And then we replace input with the nextInput

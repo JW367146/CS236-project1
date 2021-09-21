@@ -89,7 +89,7 @@ public:
     FSA_String() : Automaton(TokenType::STRING) {}  // Call the base constructor
 
     void S0(const std::string& input) {
-       char a = input[index];
+      // char a = input[index];
         if (input[index] == '\'') {
             index++;
             inputRead++;

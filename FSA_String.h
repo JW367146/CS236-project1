@@ -11,15 +11,15 @@ class FSA_String : public Automaton
 private:
 
     void S1 (const std::string& input){
-//        char a = input[index];
+        //char a = input[index];
         if(input[index] == '\''){
             inputRead++;
             //go to accept state
         }
 
         //Now check to see if we reached the end of file
-        else if(EndofFile(input,inputRead)){
-            Serr();
+        else if(EndofFile(input,inputRead+1)){
+            StringSerr();
         }
         else if(input[index]){
             if (input[index] =='\n'){
@@ -36,9 +36,9 @@ private:
 
     }
     void S2 (const std::string& input){
-//        char a = input[index];
-        if(EndofFile(input,inputRead)){
-            Serr();
+        //char a = input[index];
+        if(EndofFile(input,inputRead+1)){
+            StringSerr();
         }
         else if(input[index] == '\''){
             inputRead++;
@@ -63,7 +63,7 @@ private:
     }
 
     void S3 (const std::string& input){
-//        char a = input[index];
+       // char a = input[index];
         if(input[index] == '\''){
             // This means there is a ''inside the string which shouldn't terminate the string
             inputRead++;
@@ -89,7 +89,7 @@ public:
     FSA_String() : Automaton(TokenType::STRING) {}  // Call the base constructor
 
     void S0(const std::string& input) {
-//        char a = input[index];
+       char a = input[index];
         if (input[index] == '\'') {
             index++;
             inputRead++;

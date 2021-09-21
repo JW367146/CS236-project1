@@ -10,6 +10,7 @@ protected:
     int index = 0;
     TokenType type;
 
+
 //    //I want to know if I'm at the end of the file
 //    bool EOF (const std::string inputy, const int inputReady){
 //        inputSize = input.size();
@@ -50,9 +51,19 @@ public:
     // Every subclass must define this method
     virtual void S0(const std::string& input) = 0;
 
+
+
+
     void Serr() {
         // Indicate the input was rejected
         inputRead = 0;
+    }
+    void StringSerr() {
+        //I need a seperate error for strings when they get to the end of file becuase I need to not make inputRead = 0;
+        //I just need to change the type to undefined
+        type = TokenType::UNDEFINED;
+        // I'm rolling back the inputRead by one so it will see the end of file.
+        //inputRead--;
     }
 
     virtual Token* CreateToken(std::string input, int lineNumber) { return new Token(type, input, lineNumber); }

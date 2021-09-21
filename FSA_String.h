@@ -18,7 +18,7 @@ private:
         }
 
         //Now check to see if we reached the end of file
-        if(EndofFile(input,inputRead)){
+        else if(EndofFile(input,inputRead)){
             Serr();
         }
         else if(input[index]){

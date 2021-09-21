@@ -10,17 +10,9 @@ C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 Token.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Token.h
 
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.cpp
-ColonAutomaton.h
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.h
-
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonAutomaton.h
 Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
-
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.cpp
-ColonDashAutomaton.h
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
 
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/ColonDashAutomaton.h
 Automaton.h
@@ -149,12 +141,4 @@ Automaton.h
 C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Automaton.h
 string
 -
-
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/main.cpp
-Lexer.h
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/Lexer.h
-iostream
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/iostream
-fstream
-C:/Users/Joseph Wilson/CLionProjects/CS236 Project1/fstream
 

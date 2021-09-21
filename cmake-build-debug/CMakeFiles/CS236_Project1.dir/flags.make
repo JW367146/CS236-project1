@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -IC:\Users\JOSEPH~1\CLIONP~1\CS236P~1\.
 
-CXX_FLAGS = /DWIN32 /D_WINDOWS /EHsc -Wall -Werror /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+CXX_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
 

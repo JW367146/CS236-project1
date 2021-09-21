@@ -1,7 +1,2 @@
-
-Queries:
-   marriedTo ('Bea' , 'Zed')?
-
-Rules:
-   marriedTo( X,Y ) :- marriedTo(Y,X) .
-
+# COPYRIGHT © BRIGHAM YOUNG UNIVERSITY CS 236
+# FOR USE ONLY DURING SPRING 2021 SEMESTER

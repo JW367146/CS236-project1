@@ -17,4 +17,3 @@ add_executable(CS236_Project1
         Token.cpp
         Token.h FSA_Queries.h Undefined.h FSA_L_Paren.h FSA_R_Paren.h FSA_Comma.h FSA_Multiply.h FSA_String.h FSA_Rules.h FSA_Schemes.h FSA_Facts.h FSA_ID.h FSA_Comment.h)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")

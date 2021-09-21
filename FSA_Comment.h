@@ -64,7 +64,7 @@ private:
             S2(input);
         }
         else if (EndofFile(input, inputRead)){
-            Serr();
+            CommentSerr();
         }
         else Serr();
 
@@ -80,7 +80,7 @@ private:
             //Time to go to a accept state.
         }
         else if(EndofFile(input,inputRead)){
-            Serr();
+            CommentSerr();
         }
         else if(input[index]){
             //This is where I will check for new lines

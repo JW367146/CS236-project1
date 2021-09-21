@@ -1,19 +1,44 @@
+"C:\Users\Joseph Wilson\CLionProjects\CS236 Project1\cmake-build-debug\CS236_Project1.exe" testCase.txt
 (COMMENT,"# COPYRIGHT ┬⌐ BRIGHAM YOUNG UNIVERSITY CS 236",1)
 (COMMENT,"# FOR USE ONLY DURING SPRING 2021 SEMESTER",2)
-(STRING,"'
-''
-''''
+(COMMENT,"#This test tests valid strings",3)
+(STRING,"'This is a string'",4)
+(STRING,"''",5)
+(STRING,"''''
 ''''''
-''''''''
-''''''''''
-''''''''''''
-''''''''''''''
-''''''''''''''''
-'",3)
-(STRING,"' '' '",14)
+'",6)
+(ID,"frank",8)
+(STRING,"'
+'''",8)
+(ID,"frank",9)
+(STRING,"'
+'''",9)
+(ID,"frank",10)
+(STRING,"'''",10)
+(STRING,"'''''",11)
+(ID,"frank",11)
+(STRING,"'
+'",11)
+(UNDEFINED,"{",12)
+(UNDEFINED,"}",12)
+(UNDEFINED,"[",12)
+(UNDEFINED,"]",12)
+(LEFT_PAREN,"(",12)
+(RIGHT_PAREN,")",12)
+(UNDEFINED,"!",12)
+(UNDEFINED,"@",12)
+(COMMENT,"#$%^&*'",12)
+(STRING,"'''",13)
+(ID,"bob",13)
+(STRING,"'
+'",13)
+(STRING,"''",14)
+(ID,"bob",14)
+(STRING,"'
+'' '",14)
+(ID,"bob",15)
 (UNDEFINED,"'
-''
-'' ''
 ",15)
-(EOF,"",18)
-Total Tokens = 6
+(EOF,"",16)
+Total Tokens = 33
+Process finished with exit code 0

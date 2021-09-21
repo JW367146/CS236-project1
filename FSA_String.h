@@ -12,9 +12,15 @@ private:
 
     void S1 (const std::string& input){
         //char a = input[index];
+
+        //I need to change this so that '''' is only one string aparently
         if(input[index] == '\''){
             inputRead++;
+            index++;
             //go to accept state
+
+            //maybe I shouldn't go to an accept state yet. I should go to that same place in s3?
+            S3(input);
         }
 
         //Now check to see if we reached the end of file
@@ -70,12 +76,12 @@ private:
             index++;
             S2(input);
         }
-//        else if(input[index] == '\n'){
-//            //If we got here and there's a new line then our string is done
-//
-//            //We go to an accept state
-//            //We shouldn't increment input read
-//        }
+        else if(input[index] == '\n'){
+            //If we got here and there's a new line then our string is done
+
+            //We go to an accept state
+            //We shouldn't increment input read
+        }
         else{
             //If we got to this stage, then we got ' and then another' and unless there is a ' coming right after our string is done.
             //inputRead++;

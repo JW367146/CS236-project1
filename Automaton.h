@@ -70,7 +70,7 @@ public:
     //We also need a seperate error for comments for the same reason.
     type = TokenType::UNDEFINED;
     //Now we roll back.
-    inputRead--;
+    //inputRead--;
     }
 
     virtual Token* CreateToken(std::string input, int lineNumber) { return new Token(type, input, lineNumber); }

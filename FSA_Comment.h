@@ -54,6 +54,9 @@ private:
             inputRead++;
             index++;
             S3(input);
+        }
+        else if (EndofFile(input, inputRead+1)){
+            CommentSerr();
         }else if (input[index]) {
             //This is where I will check for new lines
             if (input[index] == '\n'){
@@ -63,9 +66,7 @@ private:
             index++;
             S2(input);
         }
-        else if (EndofFile(input, inputRead)){
-            CommentSerr();
-        }
+
         else Serr();
 
     }
@@ -79,7 +80,7 @@ private:
             SF(input);
             //Time to go to a accept state.
         }
-        else if(EndofFile(input,inputRead)){
+        else if(EndofFile(input,inputRead+1)){
             CommentSerr();
         }
         else if(input[index]){
